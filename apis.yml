@@ -1,0 +1,46 @@
+aid: shippers-group
+name: The Shippers Group
+description: >-
+  The Shippers Group is a leading national third-party logistics (3PL) company
+  headquartered in Dallas, Texas. Founded in 1901, the company provides warehousing,
+  co-packaging, fulfillment, and transportation management services across 12 locations
+  totaling over 5 million square feet of space. The Shippers Group serves brand leaders
+  and market innovators in industries including food, consumer packaged goods, and retail.
+  The company was acquired by Kenco Group in December 2023.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Third-Party Logistics
+  - Warehousing
+  - Fulfillment
+  - Supply Chain
+  - Transportation Management
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/shippers-group/refs/heads/main/apis.yml
+created: '2026-05-02'
+modified: '2026-05-02'
+specificationVersion: '0.19'
+apis:
+  - aid: shippers-group:shippers-group
+    name: The Shippers Group
+    description: >-
+      The Shippers Group provides third-party logistics services including warehousing,
+      co-packaging, fulfillment, and transportation management. As a national 3PL provider
+      operating across 12 US locations, the company manages supply chain operations for
+      consumer packaged goods, food, and retail brands. No public developer API is
+      currently available; integrations are handled through established EDI connections
+      and logistics technology partnerships.
+    humanURL: https://www.theshippersgroup.com/
+    tags:
+      - Third-Party Logistics
+      - Warehousing
+      - Fulfillment
+      - Supply Chain
+    properties:
+      - type: Documentation
+        url: https://www.theshippersgroup.com/services/
+      - type: Website
+        url: https://www.theshippersgroup.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
