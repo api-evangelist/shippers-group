@@ -1,0 +1,41 @@
+{
+  "id": "wh-dal-001",
+  "name": "Dallas Distribution Center - Haltom City",
+  "address": {
+    "street1": "5000 Industrial Boulevard",
+    "street2": "Dock 12",
+    "city": "Haltom City",
+    "state": "TX",
+    "zip": "76117",
+    "country": "US"
+  },
+  "squareFootage": 450000,
+  "type": "ambient",
+  "capabilities": [
+    "warehousing",
+    "distribution",
+    "co-packaging",
+    "fulfillment",
+    "pick-and-pack",
+    "value-added-services"
+  ],
+  "certifications": [
+    "AIB Superior",
+    "SQF Level 2",
+    "FSMA Compliant"
+  ],
+  "operatingHours": {
+    "monday": "06:00-22:00",
+    "tuesday": "06:00-22:00",
+    "wednesday": "06:00-22:00",
+    "thursday": "06:00-22:00",
+    "friday": "06:00-22:00",
+    "saturday": "07:00-15:00",
+    "sunday": "Closed"
+  },
+  "contactName": "Operations Manager",
+  "contactPhone": "+1-214-555-0100",
+  "contactEmail": "dallas-ops@theshippersgroup.com",
+  "createdAt": "2001-01-15T08:00:00Z",
+  "updatedAt": "2024-01-10T14:30:00Z"
+}

@@ -1,0 +1,172 @@
+name: The Shippers Group Vocabulary
+description: >-
+  Domain vocabulary for The Shippers Group third-party logistics (3PL) operations,
+  warehousing, fulfillment, co-packaging, and supply chain management.
+version: "1.0"
+created: "2026-05-02"
+modified: "2026-05-02"
+
+terms:
+
+  # Core Organization Concepts
+  - term: Third-Party Logistics
+    abbreviation: 3PL
+    definition: >-
+      The practice of outsourcing logistics operations — including warehousing, transportation,
+      fulfillment, and supply chain management — to a specialized provider. The Shippers Group
+      is a leading national 3PL company founded in 1901 and acquired by Kenco Group in 2023.
+    tags:
+      - Logistics
+      - Core
+
+  - term: Warehousing
+    definition: >-
+      Storage and management of goods in a warehouse facility. Includes receiving, put-away,
+      inventory management, cycle counting, and product retrieval. The Shippers Group operates
+      over 5 million square feet of warehouse space across 12 US locations.
+    tags:
+      - Warehousing
+      - Core
+
+  - term: Distribution Center
+    abbreviation: DC
+    definition: >-
+      A warehouse facility specifically designed for order fulfillment and outbound shipment.
+      Distribution centers manage inbound freight, storage, picking, packing, and outbound
+      delivery to retailers, e-commerce customers, or other destinations.
+    tags:
+      - Warehousing
+      - Distribution
+
+  # Service Types
+  - term: Co-Packaging
+    definition: >-
+      Value-added service that involves repackaging, kitting, assembly, or co-packing of
+      products. Examples include bundling promotional packs, relabeling for different markets,
+      and assembling display-ready packaging (DRP). A core competency of The Shippers Group.
+    tags:
+      - Services
+      - Value-Added
+
+  - term: Fulfillment
+    definition: >-
+      The complete process of receiving, processing, and delivering orders to end customers.
+      Includes order management, inventory allocation, pick and pack, and carrier integration.
+      Used for both B2B (retail) and DTC (direct-to-consumer) channels.
+    tags:
+      - Services
+      - Fulfillment
+
+  - term: Transportation Management
+    abbreviation: TM
+    definition: >-
+      Coordination of freight carriers, routes, and shipment optimization. Includes carrier
+      selection, load planning, freight audit, and visibility. The Shippers Group provides TMS
+      solutions integrated with their warehousing operations.
+    tags:
+      - Transportation
+      - Services
+
+  - term: Cross-Docking
+    definition: >-
+      A logistics technique where incoming shipments are transferred directly from inbound
+      to outbound transportation with minimal or no storage time. Used to reduce handling
+      and speed up the supply chain.
+    tags:
+      - Warehousing
+      - Distribution
+
+  - term: Pick and Pack
+    definition: >-
+      An order fulfillment process where individual items are picked from warehouse storage
+      locations and packed into shipment containers. Used for e-commerce and direct-to-consumer
+      order fulfillment.
+    tags:
+      - Fulfillment
+      - Services
+
+  - term: Value-Added Services
+    abbreviation: VAS
+    definition: >-
+      Non-standard logistics services that enhance product value before delivery. Includes
+      labeling, re-working, quality inspection, display building, and promotional bundling.
+    tags:
+      - Services
+      - Value-Added
+
+  # Inventory Concepts
+  - term: SKU
+    definition: >-
+      Stock Keeping Unit — a unique identifier assigned to a specific product variant held
+      in inventory. SKUs enable precise tracking of product quantities, locations, and movements
+      through the warehouse management system.
+    tags:
+      - Inventory
+      - Core
+
+  - term: Inventory Management
+    definition: >-
+      The process of tracking product quantities, locations, and movements within a warehouse.
+      Includes receiving, storage assignment, cycle counting, and reconciliation with client
+      order management systems.
+    tags:
+      - Inventory
+      - Core
+
+  - term: Cycle Count
+    definition: >-
+      A periodic inventory audit method where a subset of inventory is counted on a rotating
+      schedule. More efficient than full physical inventory counts and catches discrepancies
+      earlier. Standard practice in professional 3PL operations.
+    tags:
+      - Inventory
+
+  # Industry Verticals
+  - term: Consumer Packaged Goods
+    abbreviation: CPG
+    definition: >-
+      Products consumed daily by end consumers and replaced frequently, such as food, beverages,
+      household products, and personal care items. A primary market segment for The Shippers Group.
+    tags:
+      - Industry
+      - CPG
+
+  - term: Food-Grade Warehousing
+    definition: >-
+      Warehouse operations meeting food safety standards for storage of food and beverage products.
+      Requires compliance with FDA FSMA regulations, AIB standards, and may include temperature
+      control for perishables.
+    tags:
+      - Industry
+      - Food
+      - Compliance
+
+  # Integration Standards
+  - term: Electronic Data Interchange
+    abbreviation: EDI
+    definition: >-
+      A standard electronic communication protocol for exchanging business documents between
+      trading partners. Common EDI transactions in logistics include purchase orders (850),
+      advance ship notices (856), and invoices (810). The Shippers Group uses EDI for client integrations.
+    tags:
+      - Integration
+      - Standards
+
+  - term: Warehouse Management System
+    abbreviation: WMS
+    definition: >-
+      Software used to manage and optimize warehouse operations including inventory tracking,
+      order fulfillment, labor management, and reporting. Integrates with client ERP and TMS systems
+      via EDI or API connections.
+    tags:
+      - Technology
+      - Systems
+
+  - term: Transportation Management System
+    abbreviation: TMS
+    definition: >-
+      Software platform for planning, executing, and optimizing freight transportation.
+      Provides carrier selection, load tendering, tracking, and freight audit capabilities.
+    tags:
+      - Technology
+      - Transportation

@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api-evangelist.github.io/shippers-group/json-schema/shippers-group-warehouse-schema.json",
+  "title": "Warehouse",
+  "description": "Represents a warehouse or distribution center operated by The Shippers Group",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the warehouse facility"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the warehouse or distribution center"
+    },
+    "address": {
+      "type": "object",
+      "description": "Physical address of the facility",
+      "properties": {
+        "street1": { "type": "string" },
+        "street2": { "type": "string" },
+        "city": { "type": "string" },
+        "state": { "type": "string", "description": "Two-letter US state code" },
+        "zip": { "type": "string" },
+        "country": { "type": "string", "default": "US" }
+      },
+      "required": ["street1", "city", "state", "zip"]
+    },
+    "squareFootage": {
+      "type": "integer",
+      "description": "Total square footage of the warehouse facility"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["ambient", "refrigerated", "frozen", "hazmat", "co-packing"],
+      "description": "Type of warehouse facility"
+    },
+    "capabilities": {
+      "type": "array",
+      "description": "List of services available at this facility",
+      "items": {
+        "type": "string",
+        "enum": [
+          "warehousing",
+          "distribution",
+          "co-packaging",
+          "fulfillment",
+          "transportation-management",
+          "value-added-services",
+          "cross-docking",
+          "pick-and-pack"
+        ]
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "description": "Industry certifications held by the facility",
+      "items": {
+        "type": "string"
+      }
+    },
+    "operatingHours": {
+      "type": "object",
+      "description": "Operating hours for the facility",
+      "properties": {
+        "monday": { "type": "string" },
+        "tuesday": { "type": "string" },
+        "wednesday": { "type": "string" },
+        "thursday": { "type": "string" },
+        "friday": { "type": "string" },
+        "saturday": { "type": "string" },
+        "sunday": { "type": "string" }
+      }
+    },
+    "contactName": {
+      "type": "string",
+      "description": "Name of the facility contact person"
+    },
+    "contactPhone": {
+      "type": "string",
+      "description": "Phone number for the facility"
+    },
+    "contactEmail": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address for the facility"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the record was created"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the record was last updated"
+    }
+  },
+  "required": ["id", "name", "address", "type"]
+}

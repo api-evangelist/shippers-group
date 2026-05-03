@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sg": "https://api-evangelist.github.io/shippers-group/vocabulary/",
+
+    "Warehouse": "schema:Warehouse",
+    "LogisticsService": "schema:Service",
+    "Shipment": "schema:ParcelDelivery",
+    "Location": "schema:Place",
+    "Organization": "schema:Organization",
+
+    "id": "@id",
+    "name": "schema:name",
+    "description": "schema:description",
+    "address": "schema:address",
+    "street1": "schema:streetAddress",
+    "street2": "schema:streetAddress",
+    "city": "schema:addressLocality",
+    "state": "schema:addressRegion",
+    "zip": "schema:postalCode",
+    "country": "schema:addressCountry",
+    "squareFootage": "schema:floorSize",
+    "type": "schema:additionalType",
+    "capabilities": "schema:hasOfferCatalog",
+    "certifications": "schema:award",
+    "operatingHours": "schema:openingHoursSpecification",
+    "contactName": "schema:contactPoint",
+    "contactPhone": "schema:telephone",
+    "contactEmail": "schema:email",
+    "createdAt": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:dateTime"
+    },
+    "updatedAt": {
+      "@id": "schema:dateModified",
+      "@type": "xsd:dateTime"
+    },
+
+    "warehousing": "sg:warehousing",
+    "distribution": "sg:distribution",
+    "coPackaging": "sg:coPackaging",
+    "fulfillment": "sg:fulfillment",
+    "transportationManagement": "sg:transportationManagement",
+    "valueAddedServices": "sg:valueAddedServices",
+    "crossDocking": "sg:crossDocking",
+    "pickAndPack": "sg:pickAndPack",
+    "thirdPartyLogistics": "sg:thirdPartyLogistics",
+    "supplyChain": "sg:supplyChain"
+  }
+}

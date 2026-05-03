@@ -1,0 +1,136 @@
+{
+  "title": "Warehouse Structure",
+  "description": "Field-by-field structural documentation for a Shippers Group warehouse or distribution center record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": "Unique identifier for the warehouse facility. Used to reference the facility across shipment, inventory, and order records."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Human-readable name for the warehouse or distribution center (e.g., 'Dallas Distribution Center #1')."
+    },
+    {
+      "name": "address",
+      "type": "object",
+      "required": true,
+      "description": "Physical location of the warehouse facility.",
+      "fields": [
+        {
+          "name": "street1",
+          "type": "string",
+          "required": true,
+          "description": "Primary street address line"
+        },
+        {
+          "name": "street2",
+          "type": "string",
+          "required": false,
+          "description": "Secondary address line (suite, dock number, etc.)"
+        },
+        {
+          "name": "city",
+          "type": "string",
+          "required": true,
+          "description": "City where the facility is located"
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "required": true,
+          "description": "Two-letter US state abbreviation (e.g., TX, GA, PA)"
+        },
+        {
+          "name": "zip",
+          "type": "string",
+          "required": true,
+          "description": "US ZIP code or ZIP+4 code"
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "required": false,
+          "description": "Country code, defaults to US"
+        }
+      ]
+    },
+    {
+      "name": "squareFootage",
+      "type": "integer",
+      "required": false,
+      "description": "Total square footage of the warehouse or distribution center. The Shippers Group operates over 5 million square feet across 12 locations."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Warehouse type classification: ambient (dry goods), refrigerated, frozen, hazmat (hazardous materials), or co-packing.",
+      "enum": ["ambient", "refrigerated", "frozen", "hazmat", "co-packing"]
+    },
+    {
+      "name": "capabilities",
+      "type": "array",
+      "required": false,
+      "description": "List of logistics services offered at this facility. A facility may offer multiple capabilities.",
+      "items": [
+        "warehousing - standard storage and inventory management",
+        "distribution - outbound order fulfillment and shipment",
+        "co-packaging - repackaging, kitting, and assembly",
+        "fulfillment - e-commerce or direct-to-consumer order processing",
+        "transportation-management - carrier coordination and freight management",
+        "value-added-services - labeling, re-work, inspection",
+        "cross-docking - inbound to outbound without storage",
+        "pick-and-pack - order picking and packing services"
+      ]
+    },
+    {
+      "name": "certifications",
+      "type": "array",
+      "required": false,
+      "description": "Industry certifications held by the facility, such as SQF, AIB, ISO 9001, or FSMA compliance."
+    },
+    {
+      "name": "operatingHours",
+      "type": "object",
+      "required": false,
+      "description": "Operating hours for the facility by day of week. Hours are expressed in local facility time."
+    },
+    {
+      "name": "contactName",
+      "type": "string",
+      "required": false,
+      "description": "Name of the primary contact person for the facility."
+    },
+    {
+      "name": "contactPhone",
+      "type": "string",
+      "required": false,
+      "description": "Direct phone number for the facility."
+    },
+    {
+      "name": "contactEmail",
+      "type": "string",
+      "format": "email",
+      "required": false,
+      "description": "Email address for facility inquiries."
+    },
+    {
+      "name": "createdAt",
+      "type": "string",
+      "format": "date-time",
+      "required": false,
+      "description": "ISO 8601 timestamp when the facility record was created."
+    },
+    {
+      "name": "updatedAt",
+      "type": "string",
+      "format": "date-time",
+      "required": false,
+      "description": "ISO 8601 timestamp when the facility record was last updated."
+    }
+  ]
+}
