@@ -68,6 +68,8 @@ apis:
         url: https://www.kencogroup.com/services/
 
 common:
+  - type: DomainSecurity
+    url: security/shippers-group-domain-security.yml
   - type: Website
     url: https://www.theshippersgroup.com/
   - type: Services
