@@ -35,7 +35,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shippers-group.png
 tags:
-  - Third-Party Logistics
+  - Third Party Logistics
   - Warehousing
   - Fulfillment
   - Supply Chain
@@ -68,7 +68,7 @@ apis:
       856, 810 transaction sets) and WMS/TMS integration agreements.
     humanURL: https://www.theshippersgroup.com/
     tags:
-      - Third-Party Logistics
+      - Third Party Logistics
       - Warehousing
       - Fulfillment
       - Supply Chain
@@ -94,7 +94,7 @@ apis:
       WMS, TMS, and analytics capabilities that now extend to Shippers Group operations.
     humanURL: https://www.kencogroup.com/
     tags:
-      - Third-Party Logistics
+      - Third Party Logistics
       - Warehousing
       - Distribution
       - Supply Chain
