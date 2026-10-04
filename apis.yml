@@ -57,6 +57,7 @@ modified: '2026-05-02'
 specificationVersion: '0.23'
 apis:
   - aid: shippers-group:shippers-group-logistics
+    x-published: false
     name: The Shippers Group Logistics Operations
     description: >-
       The Shippers Group provides third-party logistics services including warehousing,
@@ -86,6 +87,7 @@ apis:
         url: https://www.theshippersgroup.com/
 
   - aid: shippers-group:kenco-group
+    x-published: false
     name: Kenco Group (Parent Company)
     description: >-
       Kenco Group acquired The Shippers Group in December 2023. Kenco is a leading
