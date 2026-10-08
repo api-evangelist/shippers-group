@@ -112,6 +112,12 @@ apis:
         url: https://www.kencogroup.com/services/
 
 common:
+  - type: Plans
+    url: plans/shippers-group-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/shippers-group-rate-limits.yml
+  - type: FinOps
+    url: finops/shippers-group-finops.yml
   - type: DomainSecurity
     url: security/shippers-group-domain-security.yml
   - type: Website
